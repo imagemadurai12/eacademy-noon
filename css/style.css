@@ -10,8 +10,10 @@
 :root {
     --primary-color: #252525;
     --secondary-color: #FFFFFF;
-    --tertiary-color: #FB6818;
-    --bg-primary-color: #FB6818;
+    /* --tertiary-color: #FB6818;
+    --bg-primary-color: #FB6818; */
+    --tertiary-color: navy;
+    --bg-primary-color: navy;
     --bg-secondary-color: #FFFFFF;
     --bg-tertiary-color: #252525;
     --fs-14: 14px;
