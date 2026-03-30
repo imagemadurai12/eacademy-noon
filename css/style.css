@@ -1,0 +1,313 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #252525;
+    --secondary-color: #FFFFFF;
+    --tertiary-color: #FB6818;
+    --bg-primary-color: #FB6818;
+    --bg-secondary-color: #FFFFFF;
+    --bg-tertiary-color: #252525;
+    --fs-14: 14px;
+    --fs-16: 16px;
+    --fs-18: 18px;
+    --fs-20: 20px;
+    --fs-24: 24px;
+    --fs-40: 40px;
+    --fw-400: 400;
+    --fw-600: 600;
+    --fw-700: 700;
+}
+
+.primary-btn {
+    padding: 15px 25px;
+    background-color: var(--bg-primary-color);
+    color: var(--secondary-color);
+    border-radius: 5px;
+    font-size: var(--fs-18);
+    text-decoration: none;
+    transition-duration: 0.7s;
+}
+
+.primary-btn:hover {
+    color: var(--primary-color);
+    background-color: var(--bg-secondary-color);
+}
+
+.secondary-btn {
+    padding: 15px 25px;
+    border-radius: 5px;
+    color: var(--primary-color);
+    background-color: var(--bg-secondary-color);
+    font-size: var(--fs-18);
+    text-decoration: none;
+    transition-duration: 0.7s;
+}
+
+.secondary-btn:hover {
+    background-color: var(--bg-tertiary-color);
+    color: var(--secondary-color);
+}
+
+.heading-bar {
+    height: 10px;
+    width: 50%;
+    background-color: var(--bg-secondary-color);
+    border-radius: 5px;
+}
+
+
+/* Navbar */
+
+header {
+    height: 550px;
+    background-color: rgb(0, 0, 0, 0.3);
+    padding: 0px 15%;
+    background-image: url('../images/banner-img.png');
+    background-blend-mode: overlay;
+    margin-bottom: 80px;
+}
+
+header nav {
+    height: 15%;
+    /* background-color: darkgreen; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav h1 {
+    font-size: var(--fs-40);
+    color: var(--secondary-color);
+}
+
+header nav #btn,header nav label {
+    display: none;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul li a {
+    font-size: var(--fs-18);
+    color: var(--secondary-color);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+header #banner {
+    height: 85%;
+    /* background-color: rgb(136, 208, 136); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    align-items: start;
+}
+
+header #banner h1 {
+    font-weight: var(--fw-600);
+    font-size: var(--fs-40);
+    color: var(--secondary-color);
+
+}
+
+header #banner p {
+    font-size: var(--fs-16);
+    width: 50%;
+    color: var(--secondary-color);
+
+}
+
+
+/* footer */
+footer {
+    height: 350px;
+    background-color: var(--bg-tertiary-color);
+    padding: 20px 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+footer .footer-link-box-container {
+    height: 70%;
+    /* background-color: darkgoldenrod; */
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-link-box-container .footer-link-container {
+    height: 100%;
+    width: 23%;
+    /* background-color: darkgreen; */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: start;
+}
+
+footer .footer-link-box-container .footer-link-container h1 {
+    font-size: var(--fs-24);
+    font-weight: var(--fw-600);
+    color: var(--secondary-color);
+}
+
+footer .footer-link-box-container .footer-link-container p {
+    font-size: var(--fs-16);
+    color: var(--secondary-color);
+}
+
+footer .footer-link-box-container .footer-link-container ul {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    list-style-type: none;
+}
+
+footer .footer-link-box-container .footer-link-container ul li a {
+    text-decoration: none;
+    font-size: var(--fs-16);
+    color: var(--secondary-color);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .footer-link-box-container .footer-link-container ul li a .icon-box {
+    height: 20px;
+    width: 20px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer-copy-rights-container {
+    height: 20%;
+    /* background-color: darkmagenta; */
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+footer .footer-copy-rights-container p,
+footer .footer-copy-rights-container p a {
+    font-size: var(--fs-16);
+    color: var(--secondary-color);
+}
+
+
+
+
+/* Media Query */
+@media only screen and (max-width:600px) {
+    :root {
+        --fs-14: 12px;
+        --fs-16: 14px;
+        --fs-18: 16px;
+        --fs-20: 18px;
+        --fs-24: 20px;
+        --fs-40: 32px;
+    }
+
+    header {
+        height: auto;
+        padding: 0px 6%;
+        margin-bottom: 50px;
+    }
+
+    header nav {
+        height: 80px;
+        /* background-color: yellowgreen; */
+    }
+
+    header nav label {
+        display: block;
+        font-size: var(--fs-40);
+        color: var(--secondary-color);
+        order: 3;
+    }
+
+    header nav ul {
+        position: absolute;
+        height: auto;
+        flex-direction: column;
+        gap:20px;
+        top:80px;
+        width: 100%;
+        left: -100%;
+        align-items: start;
+        padding: 40px 6%;
+        background-color: var(--bg-primary-color);
+        transition-duration: 0.7s;
+    }
+
+    header #btn:checked ~ ul{
+        left: 0px;
+        /* background-color: red; */
+    }
+
+    /* header nav h1,
+    header nav ul {
+        display: none;
+    } */
+
+    header #banner {
+        gap: 20px;
+        padding: 40px 0px;
+    }
+
+    header #banner p {
+        width: 100%;
+    }
+
+
+
+    /* Footer */
+    footer {
+        height: auto;
+        padding: 40px 6%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer .footer-link-box-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    footer .footer-link-box-container .footer-link-container {
+        width: 100%;
+    }
+
+    footer .footer-link-box-container .footer-link-container ul {
+        gap: 10px;
+    }
+
+    footer .footer-copy-rights-container p {
+        text-align: center;
+    }
+}
+
+
+
+@media only screen and (max-width:470px) {
+    :root {
+        --fs-20: 16px;
+    }
+}
